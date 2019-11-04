@@ -20,7 +20,8 @@ VOLUME ["/filestore"]
 WORKDIR /srv/odoo
 
 
-COPY src/odoo/requirements.txt /srv/odoo/src/odoo/
+#COPY src/odoo/requirements.txt /srv/odoo/src/odoo/
+COPY requirements.txt /srv/odoo/src/odoo/
 
 RUN mkdir local bin \
     && \
